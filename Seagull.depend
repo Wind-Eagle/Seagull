@@ -1,0 +1,1039 @@
+# depslib dependency file v1.0
+1564751919 source:/home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+
+1570343485 
+
+1564757604 source:/home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1564758929 /home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1564732010 /home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/position_cost.h
+	<string>
+
+1564748609 source:/home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 >
+
+1564751662 source:/home/air_eagle/Seagull/pre-alpha/0.0.1 - pichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1564860040 source:/home/air_eagle/Seagull/0.2 - pikachu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1564835370 /home/air_eagle/Seagull/0.2 - pikachu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1564836369 /home/air_eagle/Seagull/0.2 - pikachu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/0.2 - pikachu edition/position_cost.h
+	<string>
+
+1564859642 source:/home/air_eagle/Seagull/0.2 - pikachu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1564835433 source:/home/air_eagle/Seagull/0.2 - pikachu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1564835358 source:/home/air_eagle/Seagull/0.2 - pikachu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1567837678 source:/home/air_eagle/Seagull/0.3 - raichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1565087195 /home/air_eagle/Seagull/0.3 - raichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/0.3 - raichu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/0.3 - raichu edition/position_cost.h
+	<string>
+
+1567837443 source:/home/air_eagle/Seagull/0.3 - raichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1565097613 source:/home/air_eagle/Seagull/0.3 - raichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1565087278 source:/home/air_eagle/Seagull/0.3 - raichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568046723 source:/home/air_eagle/Seagull/0.3.1 - raichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1565087195 /home/air_eagle/Seagull/0.3.1 - raichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/0.3.1 - raichu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/0.3.1 - raichu edition/position_cost.h
+	<string>
+
+1568005533 source:/home/air_eagle/Seagull/0.3.1 - raichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1567842043 source:/home/air_eagle/Seagull/0.3.1 - raichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1567951821 source:/home/air_eagle/Seagull/0.3.1 - raichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568381148 source:/home/air_eagle/Seagull/0.3.2 - raichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1565087195 /home/air_eagle/Seagull/0.3.2 - raichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1564239627 /home/air_eagle/Seagull/0.3.2 - raichu edition/position_cost.h
+	<string>
+
+1568381503 source:/home/air_eagle/Seagull/0.3.2 - raichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1565086747 /home/air_eagle/Seagull/0.3.2 - raichu edition/analyze.h
+	<string>
+	<chrono>
+
+1568389711 source:/home/air_eagle/Seagull/0.3.2 - raichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568388852 source:/home/air_eagle/Seagull/0.3.2 - raichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568381503 source:/home/air_eagle/Seagull/0.3.4 - raichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1565087195 /home/air_eagle/Seagull/0.3.4 - raichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/0.3.4 - raichu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/0.3.4 - raichu edition/position_cost.h
+	<string>
+
+1568381148 source:/home/air_eagle/Seagull/0.3.4 - raichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1568397785 source:/home/air_eagle/Seagull/0.3.4 - raichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568397775 source:/home/air_eagle/Seagull/0.3.4 - raichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568535492 source:/home/air_eagle/Seagull/0.3.3 - raichu edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 /home/air_eagle/Seagull/0.3.3 - raichu edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/0.3.3 - raichu edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/0.3.3 - raichu edition/position_cost.h
+	<string>
+
+1568538538 source:/home/air_eagle/Seagull/0.3.3 - raichu edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 source:/home/air_eagle/Seagull/0.3.3 - raichu edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1568537820 source:/home/air_eagle/Seagull/0.3.3 - raichu edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568737178 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 /home/air_eagle/Seagull/1.0 - Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.0 - Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/1.0 - Jolteon Edition/position_cost.h
+	<string>
+	<string>
+
+1569350215 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568998993 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1568737178 source:c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\analyze.h
+	<string>
+	<chrono>
+
+1564239627 c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\position_cost.h
+	<string>
+
+1568381148 source:c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1568998993 source:c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568735122 source:c:\users\理蝾韁desktop\seagull\1.0 - jolteon edition\main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568737178 source:c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\analyze.h
+	<string>
+	<chrono>
+
+1564239627 c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\position_cost.h
+	<string>
+
+1568998993 source:c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 source:c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1570343485 source:c:\users\理蝾韁desktop\seagull\1.0 - alpha jolteon edition\main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568737178 source:/home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 /home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/position_cost.h
+	<string>
+
+1570343485 source:/home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1568998993 source:/home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 source:/home/air_eagle/Seagull/1.0 - Alpha Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1568737178 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1568536694 /home/air_eagle/Seagull/1.0 - Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.0 - Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1564239627 /home/air_eagle/Seagull/1.0 - Jolteon Edition/position_cost.h
+	<string>
+
+1575979788 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1574779309 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+
+1568381148 source:/home/air_eagle/Seagull/1.0 - Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1587133669 source:/home/air_eagle/Seagull/1.1 - Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1587056607 /home/air_eagle/Seagull/1.1 - Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.1 - Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1587053998 /home/air_eagle/Seagull/1.1 - Jolteon Edition/position_cost.h
+	<string>
+
+1587139930 source:/home/air_eagle/Seagull/1.1 - Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1587133622 source:/home/air_eagle/Seagull/1.1 - Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1587135636 source:/home/air_eagle/Seagull/1.1 - Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1593956090 source:/home/air_eagle/Seagull/1.2 - Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1593950368 /home/air_eagle/Seagull/1.2 - Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.2 - Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1587053998 /home/air_eagle/Seagull/1.2 - Jolteon Edition/position_cost.h
+	<string>
+
+1594468283 source:/home/air_eagle/Seagull/1.2 - Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1593951241 source:/home/air_eagle/Seagull/1.2 - Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1593956930 source:/home/air_eagle/Seagull/1.2 - Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1594474678 source:/home/air_eagle/Seagull/1.3 - Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1594475884 /home/air_eagle/Seagull/1.3 - Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1565086747 /home/air_eagle/Seagull/1.3 - Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1594473956 /home/air_eagle/Seagull/1.3 - Jolteon Edition/position_cost.h
+	<string>
+
+1594489426 source:/home/air_eagle/Seagull/1.3 - Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1594475895 source:/home/air_eagle/Seagull/1.3 - Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1594737875 source:/home/air_eagle/Seagull/1.3 - Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1595691943 source:/home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
+1595689429 /home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1595442085 /home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1594473956 /home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/position_cost.h
+	<string>
+
+1595693851 source:/home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1594823577 source:/home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1595691050 source:/home/air_eagle/Seagull/2.0 - Shiny Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1597859339 source:/home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1596621333 /home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1595442085 /home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1594473956 /home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/position_cost.h
+	<string>
+
+1597856744 source:/home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1596621326 source:/home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1597855167 source:/home/air_eagle/Seagull/2.1 - Shiny Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+
