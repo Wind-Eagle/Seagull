@@ -354,8 +354,6 @@ int main()
     cout<<"Seagull 2.2"<<endl;
     cout<<"A free UCI chess engine for playing rapid and classical chess. Also can be used for analyzing real-played matches."<<endl;
     cout<<"What is new in this version:"<<endl;
-    cout<<"* Fixed futility pruning and limited razoring."<<endl;
-    cout<<"* Advanced position cost."<<endl;
     cout<<"* Added \"go depth\" and \"go movetime\" commands."<<endl;
     cout<<"* Author: Wind_Eagle. Build date: 21.08.2020"<<endl;
     cout<<endl;
