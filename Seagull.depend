@@ -1037,3 +1037,62 @@
 	<chrono>
 	<cmath>
 
+1598025778 source:/home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/position_cost.cpp
+	"rules.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<algorithm>
+	<cmath>
+
+1596621333 /home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/rules.h
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<set>
+
+1596621326 source:/home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/rules.cpp
+	"rules.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+
+1594473956 /home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/position_cost.h
+	<string>
+
+1598028860 source:/home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/main.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<iomanip>
+	<string>
+	<thread>
+	<chrono>
+
+1595442085 /home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/analyze.h
+	<string>
+	<chrono>
+
+1598026921 source:/home/air_eagle/Seagull/2.2 - Shiny Jolteon Edition/analyze.cpp
+	"rules.h"
+	"analyze.h"
+	"position_cost.h"
+	<iostream>
+	<string>
+	<ctime>
+	<random>
+	<cassert>
+	<algorithm>
+	<iomanip>
+	<cstring>
+	<chrono>
+	<cmath>
+

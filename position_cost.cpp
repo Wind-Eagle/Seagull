@@ -31,24 +31,24 @@ int Pawn0[64]=
 {
     0, 0, 0, 0, 0, 0, 0, 0,
     5, 5, 5, -20, -20, 5, 5, 5,
-    0, -5, -5, 0, 0, -5, -5, 0,
-    0, 0, 0, 20, 20, 0, 0, 0,
-    15, 15, 15, 25, 25, 15, 15, 15,
-    30, 30, 30, 50, 50, 30, 30, 30,
-    70, 70, 70, 70, 70, 70, 70, 70,
+    0, -5, -5, 0, 0, 0, -5, 0,
+    0, 0, 10, 20, 20, 10, 0, 0,
+    15, 15, 20, 25, 25, 20, 15, 15,
+    30, 30, 30, 30, 30, 30, 30, 30,
+    50, 50, 50, 50, 50, 50, 50, 50,
     0, 0, 0, 0, 0, 0, 0, 0
 };
 
 int Knight0[64]=
 {
-    -50, -40, -30, -20, -20, -30, -40, -50,
-    -40, -20, 0, 0, 0, 0, -20, -40,
-    -30, 0, 10, 15, 15, 10, 0, -30,
-    -20, 0, 15, 20, 20, 15, 0, -20,
-    -20, 0, 15, 20, 20, 15, 0, -20,
-    -30, 0, 10, 15, 15, 10, 0, -30,
-    -40, -20, 0, 0, 0, 0, -20, -40,
-    -50, -40, -30, -20, -20, -30, -40, -50
+    -50, -30, -20, -10, -10, -20, -30, -50,
+    -30, -20, -5, 0, 0, -5, -20, -30,
+    -20, -5, 10, 15, 15, 10, 0, -20,
+    -10, 0, 15, 20, 20, 15, 0, -10,
+    -10, 0, 15, 20, 20, 15, 0, -10,
+    -20, 0, 10, 15, 15, 10, 0, -20,
+    -30, -20, -5, 0, 0, -5, -20, -30,
+    -50, -30, -20, -10, -10, -20, -30, -50
 };
 
 int Bishop0[64]=
@@ -209,24 +209,26 @@ inline int get_material_cost(const Board &Position, int alpha, int beta)
     return cost;
 }
 
-const int dst_cost[15]={100,50,25,15,10,7,5,2,0,0,0,0,0,0,0};
+const int dst_cost[15]={100,50,25,20,15,10,7,5,0,0,0,0,0,0,0};
 
-const int pawn_def[8]={0,0,0,5,10,15,25,0};
-
-const int PassedPawn[8]={0,0,0,5,15,30,50,0};
+const int        pawn_def[8]={0,0,0,5, 5, 10,20,0};
+const int pawn_def_passed[8]={0,0,0,5,10,15,40,0};
+const int      PassedPawn[8]={0,0,0,10,15,30,50,0};
+//                                0,40,50,75,150
+//                                     20,30, 100
 
 int DoublePawn=-20;
 int IsolatedPawn=-20;
 int BadBishopPawn=0;
-int KnightOutpost=20;
+int KnightOutpost=30;
 int RookOpenFile=25;
 int RookSemiOpenFile=10;
-int RookQueen=10;
+int RookQueen=15;
 int KingOpenFile=-50;
 int KingSemiOpenFile=-15;
-int KingPawn=20;
+int KingPawn=25;
 int MovePriority=20;
-int PawnStorm[9]={0,-10,-30,-60,-100,-100,-100,-100,-100};
+int PawnStorm[9]={0,-10, -40, -70,-100,-100,-100,-100,-100};
 
 inline int get_positional_cost(const Board &Position, int alpha, int beta)
 {
@@ -245,6 +247,7 @@ inline int get_positional_cost(const Board &Position, int alpha, int beta)
         if ((Position.BlackPawn&nvert[mv&7]&upper_hor_white[mv>>3])==0)
         {
             cost+=PassedPawn[mv>>3];
+            if (Position.pos[mv-7]==1||Position.pos[mv-9]==1) cost+=pawn_def_passed[mv>>3];
         }
         if (((Position.WhitePawn&nvert[mv&7])==0)&&((Position.BlackPawn&Vertical0[mv&7])!=0)) cost+=IsolatedPawn;
         if (Position.pos[mv-7]==1||Position.pos[mv-9]==1) cost+=pawn_def[mv>>3];
@@ -426,8 +429,8 @@ int PosCost(const Board &Position, int alpha, int beta)
         if ((-cost)<alpha-300||(-cost)>beta+300) return (-cost);
     }
     cost+=get_positional_cost(Position, alpha, beta);
-    /*if (!Position.Move) cost+=MovePriority;
-    else cost-=MovePriority;*/
+    if (!Position.Move) cost+=MovePriority;
+    else cost-=MovePriority;
     if (Position.Move) cost*=-1;
     return cost;
 }

@@ -103,6 +103,8 @@ void generate_moves(const Board &Position, MList &Moves)
     std::sort(Moves.a, Moves.a+Moves.size, get_move_cost);
 }
 
+const int delta_pr=250;
+
 int Critical_Analyze(Board &Position, int alpha, int beta, int check_count)
 {
     if (stop_it) return 0;
@@ -114,6 +116,13 @@ int Critical_Analyze(Board &Position, int alpha, int beta, int check_count)
     pawn_move_pass(Position, Moves, Position.Move);
     for (int i=0; i<Moves.size; i++)
     {
+        bool late_endspiel=false;
+        if (__builtin_popcountll(Position.AllWhite)-__builtin_popcountll(Position.WhitePawn|Position.WhitePawn2|Position.WhitePawn7)<=2&&Position.Figures[9].size==0) late_endspiel=true;
+        if (__builtin_popcountll(Position.AllBlack)-__builtin_popcountll(Position.WhitePawn|Position.BlackPawn2|Position.BlackPawn7)<=2&&Position.Figures[10].size==0) late_endspiel=true;
+        if (late_endspiel==false)
+        {
+            if (val<alpha-abs(Cost[Position.pos[__builtin_ctzll(Moves[i].dst)]])-delta_pr) continue;
+        }
         AllCount++;
         MadeMove pmv=make_move(Position, Moves[i]);
         if (!is_checked(Position, Position.Figures[11+(!Position.Move)].a[0], !Position.Move))
@@ -192,7 +201,7 @@ std::string debug_info="";
 
 extern int MAX_N;
 
-const int fut_raz[3]={0,200,500};
+const int fut_raz[4]={0,100,200,300};
 
 int Main_Analyze(Board &Position, int alpha, int beta, int depth, MList &chain, int depth0, Move first_search_move, int move_n, int check_count, bool extended, bool shortened, bool was_capture, bool infinite, steady_clock::time_point Start0)
 {
@@ -242,7 +251,7 @@ int Main_Analyze(Board &Position, int alpha, int beta, int depth, MList &chain, 
             SmallTriple[Position.Zobrist&((1<<16)-1)].erase(Position.Zobrist);
             return beta;
         }
-        if (depth<=8&&PosCost0>=beta)
+        if (depth==12&&PosCost0-fut_raz[depth/4]>=beta&&Position.AllWhite>3&&Position.AllBlack>3)
         {
             additional_reduce=4;
         }

@@ -36,6 +36,8 @@ int parse_int(string s)
     return ans;
 }
 
+int move_time_uci=0, fixed_depth=0;
+
 void parse(string t1, string t2)
 {
     if (t1=="wtime") wtime=parse_int(t2);
@@ -44,6 +46,16 @@ void parse(string t1, string t2)
     if (t1=="binc") binc=parse_int(t2);
     if (t1=="movestogo") movestogo=parse_int(t2);
     if (t1=="infinite") infinite=true;
+    if (t1=="movetime")
+    {
+        infinite=false;
+        move_time_uci=parse_int(t2);
+    }
+    if (t1=="depth")
+    {
+        infinite=true;
+        fixed_depth=parse_int(t2);
+    }
 }
 
 extern TripleHash Triple[(1<<12)];
@@ -111,7 +123,7 @@ bool wcapture=false;
 void Run_Analyze()
 {
     is_analyzing=true;
-    if (infinite==false)
+    if (infinite==false&&move_time_uci==-1)
     {
         if (Position.Zobrist==mnull)
         {
@@ -280,9 +292,10 @@ void Run_Analyze()
         }
         if (!Position.Move) time_need+=winc;
         else time_need+=binc;
+        if (!Position.Move) time_need=min(time_need,wtime-1);
+        else time_need=min(time_need,btime-1);
     }
-    if (!Position.Move) time_need=min(time_need,wtime-1);
-    else time_need=min(time_need,btime-1);
+    if (move_time_uci>=0) time_need=move_time_uci;
     for (int i=0; i<(1<<16); i++)
         SmallTriple[i].size=0;
     Move first_search_move={0,0,0};
@@ -321,8 +334,12 @@ void Run_Analyze()
             unmake_move(Position, u0[i]);
         }
         Position=oldPosition;
-        if (infinite==false&&prev_depth*2>=time_need) break;
-        if (infinite==false&&wcapture==true&&prev_depth*3>=time_need) break;
+        if (move_time_uci==-1)
+        {
+            if (infinite==false&&prev_depth*2>=time_need) break;
+            if (infinite==false&&wcapture==true&&prev_depth*3>=time_need) break;
+        }
+        if (i==fixed_depth) break;
     }
     if (!got_move) bestmove=AllMoves[0];
     Position=oldPosition;
@@ -334,13 +351,13 @@ string words[100000];
 
 int main()
 {
-    cout<<"Seagull 2.1"<<endl;
+    cout<<"Seagull 2.2"<<endl;
     cout<<"A free UCI chess engine for playing rapid and classical chess. Also can be used for analyzing real-played matches."<<endl;
     cout<<"What is new in this version:"<<endl;
-    cout<<"* Fixed many analyze bugs."<<endl;
-    cout<<"* Fixed null move heuristic."<<endl;
+    cout<<"* Fixed futility pruning and limited razoring."<<endl;
     cout<<"* Advanced position cost."<<endl;
-    cout<<"* Author: Wind_Eagle. Build date: 19.08.2020"<<endl;
+    cout<<"* Added \"go depth\" and \"go movetime\" commands."<<endl;
+    cout<<"* Author: Wind_Eagle. Build date: 21.08.2020"<<endl;
     cout<<endl;
     cout<<"From the flight of the seagull"<<endl;
     cout<<"Come the spread claws of the eagle."<<endl;
@@ -392,7 +409,7 @@ int main()
         getline(cin,UCI_input);
         if (UCI_input=="uci")
         {
-            cout<<"id name Seagull 2.1 - Shiny Jolteon Edition"<<endl;
+            cout<<"id name Seagull 2.2 - Shiny Jolteon Edition"<<endl;
             cout<<"id author Wind_Eagle"<<endl;
             cout<<"uciok"<<endl;
             continue;
@@ -534,6 +551,8 @@ int main()
             winc=0;
             binc=0;
             movestogo=0;
+            move_time_uci=-1;
+            fixed_depth=-1;
             infinite=false;
             int pos=1;
             while (pos<siz)
