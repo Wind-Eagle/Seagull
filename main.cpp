@@ -36,7 +36,7 @@ int parse_int(string s)
     return ans;
 }
 
-int move_time_uci=0, fixed_depth=0;
+int move_time_uci=-1, fixed_depth=-1;
 
 void parse(string t1, string t2)
 {
